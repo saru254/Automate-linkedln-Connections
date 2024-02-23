@@ -17,4 +17,16 @@ def login():
     #getting the tag for submit button
     driver.find_element_by_id("login-submit").click()
 
-    
+def goto_network():
+     driver.find_element_by_id("mynetwork-tab-icon").click()
+
+
+def send_requests():
+ 
+    # Number of requests you want to send
+    n = input("Number of requests: ") 
+   
+    for i in range(0, n):
+        # position(in px) of connection button
+        pag.click(880, 770)  
+    print("Done !")
